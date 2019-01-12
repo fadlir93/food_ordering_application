@@ -2,6 +2,9 @@ module.exports = {
   /*
   ** Headers of the page
   */
+  modules: [
+    'bootstrap-vue/nuxt',
+  ],
   head: {
     title: 'client',
     meta: [
@@ -12,11 +15,10 @@ module.exports = {
     link: [
       { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }
     ],
-    modules: [
-      'bootstrap-vue/nuxt',
-    ]
   },
   
+  
+
   /*
   ** Customize the progress bar color
   */
@@ -25,6 +27,9 @@ module.exports = {
   ** Build configuration
   */
   build: {
+    modules: [
+      'bootstrap-vue/nuxt',
+    ],
     /*
     ** Run ESLint on save
     */
@@ -34,7 +39,7 @@ module.exports = {
           enforce: 'pre',
           test: /\.(js|vue)$/,
           loader: 'eslint-loader',
-          exclude: /(node_modules)/
+          exclude: /(node_modules)/,
         })
       }
     }
