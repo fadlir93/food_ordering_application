@@ -11,8 +11,12 @@ module.exports = {
     ],
     link: [
       { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }
+    ],
+    modules: [
+      'bootstrap-vue/nuxt',
     ]
   },
+  
   /*
   ** Customize the progress bar color
   */
